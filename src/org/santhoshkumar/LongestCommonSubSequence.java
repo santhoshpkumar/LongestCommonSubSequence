@@ -47,5 +47,25 @@ public class LongestCommonSubSequence {
                 }
             }
         }
+        
+        // Following code is used to print LCS
+        int index = matrix[rows][cols];
+        // Create a character array to store the lcs string
+        char[] lcs = new char[index];
+        index--;
+        int i = rows, j = cols;
+        while (i > 0 && j > 0)
+        {
+            if (strOne[j-1] == strTwo[i-1])
+            {
+                lcs[index--] = strTwo[i-1];
+                i--; j--;
+            }else if (matrix[i-1][j] > matrix[i][j-1]){
+                i--;
+            }else{
+                j--;
+            }
+        }
+        
     }
 }
