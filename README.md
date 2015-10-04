@@ -1,6 +1,6 @@
 # LongestCommonSubSequence
 
-Implementation of the longest common subsequence in Java
+####Implementation of the longest common subsequence in Java
 
 Problem statement: Given two string sequences, write an algo­rithm to find the length of longest subsequence present in both of them.
 
